@@ -1,13 +1,13 @@
-import  todoreducer  from './../features/todo/todoSlice';
-import { configureStore } from "@reduxjs/toolkit"
-import logger from 'redux-logger'
+import { configureStore } from "@reduxjs/toolkit";
+// import counterReducer from "./../features/counter/counterSlice";
+import addToCartReducer from "./../features/addToCart//addCartSlice";
 
 export const store = configureStore({
-    // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
-    devTools: true,
-    reducer: {
-        todoreducer
-    }
-})
-
-export type AppDispatch = typeof store.dispatch
+  devTools: true,
+  reducer: {
+    // counter: counterReducer,
+    addToCart: addToCartReducer,
+  },
+});
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;

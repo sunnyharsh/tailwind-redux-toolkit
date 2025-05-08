@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "fields": [
+        {
+          "label": "Product Name",
+          "name": "productName",
+          "type": "text",
+          "validation": { "required": true, "min": 2 }
+        },
+        {
+          "label": "Quantiry",
+          "name": "quantity",
+          "type": "text",
+          "validation": { "required": true, "min": 2 }
+        },
+         {
+          "label": "Description",
+          "name": "description",
+          "type": "text",
+          "validation": { "required": true, "min": 2 }
+        }
+      ]
+    }
+  
+  ]
+}

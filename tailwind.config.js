@@ -57,6 +57,8 @@ export default {
       orange: "#ff7849",
       green: "#13ce66",
       yellow: "#ffc82c",
+      red: "#FF0000",
+      bgClr: "rgb(51 47 47)",
       "gray-dark": "#273444",
       gray: "#8492a6",
       "gray-light": "#d3dce6",
@@ -65,15 +67,33 @@ export default {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
-    // extend: {
-    //   spacing: {
-    //     128: "32rem",
-    //     144: "36rem",
-    //   },
-    //   borderRadius: {
-    //     "4xl": "2rem",
-    //   },
-    // },
+    //  By default the spacing scale is inherited by the padding, margin, width, minWidth, maxWidth, height,
+    // minHeight, maxHeight, gap, inset, space, translate, scrollMargin, and scrollPadding core plugins.
+    spacing: {
+      1: "4px",
+      2: "8px",
+      3: "12px",
+      4: "16px",
+      5: "20px",
+      6: "24px",
+      7: "28px",
+      8: "32px",
+      9: "36px",
+    },
+
+    extend: {
+      //   spacing: {
+      //     128: "32rem",
+      //     144: "36rem",
+      //   },
+      borderRadius: {
+        sm: "5px",
+        md: "10px",
+        lg: "15px",
+        xl: "15px",
+        "4xl": "20px",
+      },
+    },
   },
   plugins: [],
 };
